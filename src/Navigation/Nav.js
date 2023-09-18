@@ -4,7 +4,7 @@ import "./Nav.css";
 
 const Nav = ({ handleInputChange, query }) => {
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav-container">
         <input
           className="search-input"
@@ -16,7 +16,7 @@ const Nav = ({ handleInputChange, query }) => {
       </div>
       <div className="profile-container">
         <a href="#">
-          <FiHeart className="nav-icons" />
+          <FiHeart className="nav-icons nav-icons-primary" />
         </a>
         <a href="">
           <AiOutlineShoppingCart className="nav-icons" />

@@ -11,10 +11,13 @@
   border: 2px solid #ededed;
   padding: 20px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-img {
-  width: 13rem;
+  width: 240px;
   margin-bottom: 1rem;
 }
 
@@ -44,4 +47,80 @@
 
 .bag-icon {
   color: #535353;
+}
+
+/* Small phones, tablets, large smart phones */
+
+@media (max-width: 1200px) {
+  .card-container {
+    flex-wrap: wrap;
+    margin: 32px 0 0 240px;
+  }
+  
+  .card {
+    width: calc(100 / 3);
+  }
+}
+
+@media (max-width: 1130px) {
+  .card-container {
+    flex-wrap: wrap;
+    width: calc(100 / 2);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 16px 64px;
+    height: 36vh;
+    width: auto;
+    align-items: flex-end;
+  }
+
+  .card-img {
+    height: 50%;
+    width: 20vw;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 1000px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0 32px;
+  } 
+
+  .card {
+    height: 40vh;
+    width: 30vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    margin-left: 40px;
+  }
+
+  .card {
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-img {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 460px) {
+  .card-container {
+    margin: 32px 4px 0 4px;
+  }
 }

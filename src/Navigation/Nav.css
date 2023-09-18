@@ -24,3 +24,51 @@ input {
   height: 1.5rem;
   margin-left: 2rem;
 }
+
+.search-input {
+  position: relative;
+  left: 30%;
+}
+
+/* Small phones, tablets, large smart phones */
+
+@media (max-width: 1000px) {
+  .search-input {
+    position: relative;
+    left: 40%;
+  }
+}
+
+/* Small phones */
+
+@media (max-width: 700px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .search-input {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-input {
+    text-align: center;
+  }
+
+  .profile-container {
+    padding: 12px 0;
+  }
+
+  .nav-icons-primary {
+    margin-left: 0;
+  }
+}

@@ -24,3 +24,17 @@ li {
   color: #323232;
   cursor: pointer;
 }
+
+/* Small phones, tablets, large smart phones */
+
+@media (max-width: 768px) {
+  
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+  .btns {
+    margin-top: 12px;
+  }
+}
